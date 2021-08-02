@@ -36,7 +36,17 @@ class ViewController: UIViewController {
         
         imageView.image = image0
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender:Any?){
+        let zoomViewController:ZoomViewController = segue.destination as! ZoomViewController
+        zoomViewController.zoomImage = imageView.image
+    }
+    
+    
+    
+    @IBAction func imageViewTapAction(_ sender: Any) {
+    }
+    
     @IBAction func backButton(_ sender: Any) {
         num += 3
         
@@ -101,5 +111,7 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func unwind(_ segut : UIStoryboardSegue){
+    }
 }
 

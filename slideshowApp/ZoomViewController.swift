@@ -8,11 +8,18 @@
 import UIKit
 
 class ZoomViewController: UIViewController {
-
+    
+    var zoomImage: UIImage!
+    
+    @IBOutlet weak var zoomImageView: UIImageView!
+    @IBOutlet weak var backButtonLabel: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        backButtonLabel.setTitle("戻る", for: .normal)
+        zoomImageView.image = zoomImage
     }
     
 

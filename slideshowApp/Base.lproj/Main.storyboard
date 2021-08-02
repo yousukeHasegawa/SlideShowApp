@@ -16,11 +16,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="de7-Ew-5kW">
-                                <rect key="frame" x="20" y="144" width="335" height="287"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="de7-Ew-5kW">
+                                <rect key="frame" x="20" y="142" width="335" height="287"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="de7-Ew-5kW" secondAttribute="height" multiplier="7:6" id="oyA-JO-G48"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="3Y7-lk-u5o" appends="YES" id="L0x-WM-c38"/>
+                                    <outletCollection property="gestureRecognizers" destination="RRu-mu-IdJ" appends="YES" id="zde-8I-kY1"/>
+                                </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0W2-F9-3zd">
                                 <rect key="frame" x="20" y="44" width="335" height="100"/>
@@ -64,6 +69,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="de7-Ew-5kW" firstAttribute="top" secondItem="0W2-F9-3zd" secondAttribute="bottom" id="02f-lH-n0e"/>
                             <constraint firstItem="de7-Ew-5kW" firstAttribute="top" secondItem="0W2-F9-3zd" secondAttribute="bottom" id="0Ye-Au-dS6"/>
@@ -83,6 +89,11 @@
                             <constraint firstItem="xic-gC-97l" firstAttribute="top" secondItem="de7-Ew-5kW" secondAttribute="bottom" id="sej-It-Ggv"/>
                             <constraint firstItem="0W2-F9-3zd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vy6-KK-pMs"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="3Y7-lk-u5o" appends="YES" id="zCt-Ac-x7D"/>
+                            <outletCollection property="gestureRecognizers" destination="3Y7-lk-u5o" appends="YES" id="BuJ-TX-jq2"/>
+                            <outletCollection property="gestureRecognizers" destination="RRu-mu-IdJ" appends="YES" id="evz-A0-oyv"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="backButtonLabel" destination="xic-gC-97l" id="4Rz-YX-He6"/>
@@ -93,6 +104,12 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="RRu-mu-IdJ">
+                    <connections>
+                        <action selector="imageViewTapAction:" destination="BYZ-38-t0r" id="M0S-fU-fB7"/>
+                        <segue destination="K11-rU-Cyj" kind="show" id="vCh-FU-dnc"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="91.304347826086968" y="65.625"/>
         </scene>
@@ -100,26 +117,14 @@
         <scene sceneID="l0Q-zJ-MFE">
             <objects>
                 <viewController id="K11-rU-Cyj" customClass="ZoomViewController" customModule="slideshowApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Wvf-dF-EXi">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N5m-CQ-Ua8">
-                                <rect key="frame" x="16" y="132" width="343" height="490"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWe-Ub-dsz">
-                                <rect key="frame" x="16" y="630" width="343" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="f3r-bh-UjI"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
+                    <imageView key="view" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="u21-Wj-7rb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <navigationItem key="navigationItem" id="jny-tO-Bp1"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ROJ-St-7hg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="3Y7-lk-u5o"/>
             </objects>
             <point key="canvasLocation" x="786.39999999999998" y="77.58620689655173"/>
         </scene>
