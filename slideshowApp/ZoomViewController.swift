@@ -2,7 +2,7 @@
 //  ZoomViewController.swift
 //  slideshowApp
 //
-//  Created by Yousuke Hasegawa on 2021/07/29.
+//  Created by Yousuke Hasegawa on 2021/08/02.
 //
 
 import UIKit
@@ -12,13 +12,14 @@ class ZoomViewController: UIViewController {
     var zoomImage: UIImage!
     
     @IBOutlet weak var zoomImageView: UIImageView!
-    @IBOutlet weak var backButtonLabel: UIButton!
+    @IBOutlet weak var backViewButton: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
-        backButtonLabel.setTitle("戻る", for: .normal)
+        backViewButton.setTitle("戻る", for: .normal)
         zoomImageView.image = zoomImage
     }
     

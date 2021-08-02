@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91325F7426B7E6B40022521F /* ZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91325F7326B7E6B40022521F /* ZoomViewController.swift */; };
 		913F7A8526B238B50026D9A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913F7A8426B238B50026D9A7 /* AppDelegate.swift */; };
 		913F7A8726B238B50026D9A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913F7A8626B238B50026D9A7 /* SceneDelegate.swift */; };
 		913F7A8926B238B50026D9A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913F7A8826B238B50026D9A7 /* ViewController.swift */; };
@@ -17,10 +18,10 @@
 		913F7AAC26B23ABA0026D9A7 /* baik.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 913F7AAB26B23ABA0026D9A7 /* baik.jpeg */; };
 		913F7AAF26B23AE20026D9A7 /* sheep.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 913F7AAE26B23AE20026D9A7 /* sheep.jpeg */; };
 		913F7AB226B23AF90026D9A7 /* bear.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 913F7AB126B23AF90026D9A7 /* bear.jpeg */; };
-		913F7AB926B23CD60026D9A7 /* ZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913F7AB826B23CD60026D9A7 /* ZoomViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		91325F7326B7E6B40022521F /* ZoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomViewController.swift; sourceTree = "<group>"; };
 		913F7A8126B238B50026D9A7 /* slideshowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = slideshowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		913F7A8426B238B50026D9A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		913F7A8626B238B50026D9A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,7 +34,6 @@
 		913F7AAB26B23ABA0026D9A7 /* baik.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = baik.jpeg; sourceTree = "<group>"; };
 		913F7AAE26B23AE20026D9A7 /* sheep.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sheep.jpeg; sourceTree = "<group>"; };
 		913F7AB126B23AF90026D9A7 /* bear.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bear.jpeg; sourceTree = "<group>"; };
-		913F7AB826B23CD60026D9A7 /* ZoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +73,7 @@
 				913F7A8426B238B50026D9A7 /* AppDelegate.swift */,
 				913F7A8626B238B50026D9A7 /* SceneDelegate.swift */,
 				913F7A8826B238B50026D9A7 /* ViewController.swift */,
-				913F7AB826B23CD60026D9A7 /* ZoomViewController.swift */,
+				91325F7326B7E6B40022521F /* ZoomViewController.swift */,
 				913F7A8A26B238B50026D9A7 /* Main.storyboard */,
 				913F7A8D26B238B60026D9A7 /* Assets.xcassets */,
 				913F7A8F26B238B60026D9A7 /* LaunchScreen.storyboard */,
@@ -159,7 +159,7 @@
 				913F7A8926B238B50026D9A7 /* ViewController.swift in Sources */,
 				913F7A8526B238B50026D9A7 /* AppDelegate.swift in Sources */,
 				913F7A8726B238B50026D9A7 /* SceneDelegate.swift in Sources */,
-				913F7AB926B23CD60026D9A7 /* ZoomViewController.swift in Sources */,
+				91325F7426B7E6B40022521F /* ZoomViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
