@@ -36,7 +36,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xic-gC-97l">
-                                <rect key="frame" x="187.66666666666663" y="510.66666666666674" width="137.33333333333337" height="100"/>
+                                <rect key="frame" x="50" y="510.66666666666674" width="137.66666666666666" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="rYy-Ry-kw1"/>
                                 </constraints>
@@ -47,7 +47,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ST-Zf-dFP">
-                                <rect key="frame" x="50" y="510.66666666666674" width="137.66666666666666" height="100"/>
+                                <rect key="frame" x="187.66666666666663" y="510.66666666666674" width="137.33333333333337" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="7QK-4p-DQw"/>
                                 </constraints>
@@ -71,23 +71,26 @@
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="0W2-F9-3zd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3v8-15-b3O"/>
+                            <constraint firstItem="xic-gC-97l" firstAttribute="top" secondItem="de7-Ew-5kW" secondAttribute="bottom" id="7vN-3D-fDR"/>
                             <constraint firstItem="de7-Ew-5kW" firstAttribute="leading" secondItem="0W2-F9-3zd" secondAttribute="leading" id="86j-1I-7YW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0W2-F9-3zd" secondAttribute="trailing" constant="50" id="9YI-WH-8vA"/>
-                            <constraint firstItem="6ST-Zf-dFP" firstAttribute="top" secondItem="de7-Ew-5kW" secondAttribute="bottom" id="BRY-sZ-StA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Nq7-CS-wAc" secondAttribute="bottom" id="Bg5-EH-2Xm"/>
+                            <constraint firstItem="6ST-Zf-dFP" firstAttribute="width" secondItem="xic-gC-97l" secondAttribute="width" id="Br8-w0-cki"/>
                             <constraint firstItem="0W2-F9-3zd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="C9u-Vg-I95"/>
+                            <constraint firstItem="6ST-Zf-dFP" firstAttribute="trailing" secondItem="de7-Ew-5kW" secondAttribute="trailing" id="Exp-fK-fsN"/>
                             <constraint firstItem="de7-Ew-5kW" firstAttribute="trailing" secondItem="0W2-F9-3zd" secondAttribute="trailing" id="Fhm-5m-hr9"/>
+                            <constraint firstItem="6ST-Zf-dFP" firstAttribute="leading" secondItem="xic-gC-97l" secondAttribute="trailing" id="G8u-o4-SmO"/>
                             <constraint firstItem="de7-Ew-5kW" firstAttribute="top" secondItem="0W2-F9-3zd" secondAttribute="bottom" id="HOu-Ny-7BC"/>
-                            <constraint firstItem="Nq7-CS-wAc" firstAttribute="trailing" secondItem="xic-gC-97l" secondAttribute="trailing" id="SEp-mH-E7E"/>
-                            <constraint firstItem="xic-gC-97l" firstAttribute="top" secondItem="de7-Ew-5kW" secondAttribute="bottom" id="SIc-tC-tUp"/>
-                            <constraint firstItem="6ST-Zf-dFP" firstAttribute="leading" secondItem="de7-Ew-5kW" secondAttribute="leading" id="Ubk-51-1nP"/>
+                            <constraint firstItem="Nq7-CS-wAc" firstAttribute="leading" secondItem="de7-Ew-5kW" secondAttribute="leading" id="IZJ-HJ-gOn"/>
+                            <constraint firstItem="6ST-Zf-dFP" firstAttribute="leading" secondItem="xic-gC-97l" secondAttribute="trailing" id="OLB-5x-omW"/>
+                            <constraint firstItem="Nq7-CS-wAc" firstAttribute="top" secondItem="xic-gC-97l" secondAttribute="bottom" id="QJI-dG-D6b"/>
+                            <constraint firstItem="Nq7-CS-wAc" firstAttribute="trailing" secondItem="de7-Ew-5kW" secondAttribute="trailing" id="S0d-bH-4at"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Nq7-CS-wAc" secondAttribute="bottom" id="az4-eW-QB8"/>
-                            <constraint firstItem="xic-gC-97l" firstAttribute="leading" secondItem="6ST-Zf-dFP" secondAttribute="trailing" id="c5N-HP-y0C"/>
-                            <constraint firstItem="xic-gC-97l" firstAttribute="trailing" secondItem="de7-Ew-5kW" secondAttribute="trailing" id="dV5-9b-CkA"/>
+                            <constraint firstItem="xic-gC-97l" firstAttribute="leading" secondItem="de7-Ew-5kW" secondAttribute="leading" id="dgB-6t-Fo5"/>
+                            <constraint firstItem="6ST-Zf-dFP" firstAttribute="top" secondItem="de7-Ew-5kW" secondAttribute="bottom" id="hwY-1x-CtF"/>
+                            <constraint firstItem="6ST-Zf-dFP" firstAttribute="trailing" secondItem="de7-Ew-5kW" secondAttribute="trailing" id="mGG-RY-NWT"/>
                             <constraint firstItem="de7-Ew-5kW" firstAttribute="top" secondItem="0W2-F9-3zd" secondAttribute="bottom" id="mti-GF-RBJ"/>
                             <constraint firstItem="0W2-F9-3zd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="oCd-qu-dXQ"/>
-                            <constraint firstItem="xic-gC-97l" firstAttribute="width" secondItem="6ST-Zf-dFP" secondAttribute="width" id="sM3-Q0-3sr"/>
-                            <constraint firstItem="Nq7-CS-wAc" firstAttribute="top" secondItem="xic-gC-97l" secondAttribute="bottom" id="v4g-Se-5FR"/>
-                            <constraint firstItem="Nq7-CS-wAc" firstAttribute="leading" secondItem="6ST-Zf-dFP" secondAttribute="leading" id="xAd-bh-Kbw"/>
                         </constraints>
                     </view>
                     <connections>
@@ -110,8 +113,6 @@
         <!--Zoom View Controller-->
         <scene sceneID="eDr-2n-H0E">
             <objects>
-                <exit id="crD-RE-1TL" userLabel="Exit" sceneMemberID="exit"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gzG-rR-a9r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="wSa-lQ-bjh" customClass="ZoomViewController" customModule="slideshowApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3s6-Bi-gKe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
@@ -151,6 +152,8 @@
                         <outlet property="zoomImageView" destination="tOd-Ez-7Ip" id="rlk-0P-EHx"/>
                     </connections>
                 </viewController>
+                <exit id="crD-RE-1TL" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gzG-rR-a9r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="765.60000000000002" y="82.758620689655174"/>
         </scene>

@@ -38,8 +38,18 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender:Any?){
+        
+        if self.timer != nil{
+            self.timer.invalidate()
+            self.timer = nil
+        }
+        
         let zoomViewController:ZoomViewController = segue.destination as! ZoomViewController
         zoomViewController.zoomImage = imageView.image
+        
+        slideShowButtonLabel.setTitle("再生", for: .normal)
+        backButtonLabel.isEnabled = true
+        forwardButtonLabel.isEnabled = true
     }
     
     
